@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUI", "TestUI\TestUI.csproj", "{FF0ABF90-A547-4E81-9786-DE2AC54F41C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib", "HelperLib\HelperLib.csproj", "{7E24F020-D37F-4DB2-881A-B927FF06DE88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF0ABF90-A547-4E81-9786-DE2AC54F41C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0ABF90-A547-4E81-9786-DE2AC54F41C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0ABF90-A547-4E81-9786-DE2AC54F41C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0ABF90-A547-4E81-9786-DE2AC54F41C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E24F020-D37F-4DB2-881A-B927FF06DE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E24F020-D37F-4DB2-881A-B927FF06DE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E24F020-D37F-4DB2-881A-B927FF06DE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E24F020-D37F-4DB2-881A-B927FF06DE88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
