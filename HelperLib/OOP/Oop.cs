@@ -16,13 +16,56 @@ public class LearningManagementSystem
 
     // abstraction
     /*
-    entities: guardian, student, course, teacher
+    entities: Guardian, Student, Subject, Teacher
     characteristics:
-        guardian (student): name, surname, address, email, telephone
-        student: name, surname, address, email, guardians (List<guardian>), subjects enrolled in (List<subject>)
-        subject: name, field (mathematics), year (grade 11), prerequisites (List<subject>)
-        teacher: name, surname, address, email, telephone, subjects teaching (List<subject>)
+        Guardian (student): Name, Surname, Address, Email, Telephone
+        Student: Name, Surname, Address, Email, guardians (List<guardian>), subjects enrolled in (List<subject>)
+        Subject: name, field (mathematics), year (grade 11), prerequisites (List<subject>)
+        Teacher: Name, Surname, Address, Email, telephone, subjects teaching (List<subject>)
+
+        Notes:
+            Person - shared fields (Name, Surname, Address, Email)
+            Subject references subject as pre requisite
+        
+        Classes defined below
     */
+
+    public class Subject
+    {
+        public string? Name { get; set; }
+        public string? Field { get; set; }
+        public string? Year { get; set; }
+        public List<Subject>? prerequisites { get; set; }
+    }
+
+    public class Guardian
+    {
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? Telephone { get; set; }
+    }
+
+    public class Student
+    {
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public List<Guardian>? Guardians { get; set; }
+        public List<Subject>? EnrolledIn { get; set; }
+    }
+
+    public class Teacher
+    {
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
+        public string? Address { get; set; }
+        public string? Email { get; set; }
+        public string? Telephone { get; set; }
+        public List<Subject>? Teaching { get; set; }
+    }
 }
 
 // OOP Principles
